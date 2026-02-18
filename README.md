@@ -7,3 +7,7 @@ Hecho en el lenguaje de programación Itsuki desarrollado por el Usuario @Apolo1
 Scripts Basicos para ustedes bebes.
 Repo de Itsuki:
 * https://github.com/Apolo1061/itsuki
+
+# Las Versiones
+- Perdi las versiones viejas
+- Empieza de las 0.5
