@@ -1,6 +1,6 @@
 # ItsuDoS
 
-Script de DoS ( Denegacion de Servicio ) L4 (Layer4/Capa 4)
+Script de DoS ( Denegacion de Servicio ) Capa 4.
 
 Hecho en el lenguaje de programación Itsuki desarrollado por el Usuario @Apolo1061
 
